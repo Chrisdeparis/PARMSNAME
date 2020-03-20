@@ -20,7 +20,7 @@ dcl-ds nomCliDs  likeDs(nomCliDs_template);
                                                                                                     
 // variables de travail                                                                             
 dcl-s w_message char(50);                                                                           
-dcl-s w_numCliChar char(5);                                                                         
+dcl-s w_numCliChar int(10);                                                                         
 dcl-s w_nomCliChar char(50);                                                                        
 dcl-s w_returnCodeNum int(10);                                                                      
                                                                                                     

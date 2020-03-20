@@ -4,7 +4,7 @@
 
        // parametres en entrée (input)
        dcl-ds inDs_template qualified;
-         numClient char(5);
+         numClient int(10);
        end-ds;
 
        // parametres en sortie (output)

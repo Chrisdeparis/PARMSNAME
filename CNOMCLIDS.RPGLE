@@ -4,6 +4,6 @@
 
        dcl-ds cnomcliDS_template qualified;
          // entrée
-         numcliChar char(3);
+         numcliChar int(10);
        end-ds;
  
