@@ -47,7 +47,17 @@ endmon;
                                                                                                     
 //-----------------------------------------------------------------------------                     
 begsr recherCheNomClient;                                                                           
- // todo coder la recherche dans la table                                                           
+ // todo coder la recherche dans la table            
+ exec sql select NOMCLIENT where NUMCLIENT=:w_numCli;
+ w_nomCli = exec sql select NOMCLIENT where NUMCLIENT=:w_numCli;
+
+ nomCliDS.OuDs.nomClient = w_nomCli;     
+
+ w_message =   'nomclids :  ( nom client : '                                                       
+              + %trim(w_nomCli)                                                      
+              + ')';                                                                                
+                                                                                                    
+  dsply (%trim(w_message));                                           
 endsr;                                                                                              
                                                                                                     
 //---------------------------------------------------------------------                             
